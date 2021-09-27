@@ -6,15 +6,16 @@
 #   This is done by using randrange to randomly pick a list 
 #   and then randomly pick a list index,
 # DISCOVERIES
-# You can find the people in each period by viewing the submodules 
-# in the repo-of-holding.
+    # You can find the people in each period by viewing the submodules 
+    # in the repo-of-holding.
 # QUESTIONS
-# Nada!
+#   Nada!
 # COMMENTS
+#   Also nada!
 
 from random import randrange
 
-# List people for periods 1 and 2
+# Dictionary containing lists of student names for periods 1 and 2
 list_names = {
     'pd1' : ['Alejandro Alonso', 'Aryaman Goenka', 'Christopher Liu',  'Deven Maheshwari', 
             'Emma Buller', 'Ella Krechmer',  'Gavin McGinley', 'Haotian Gan', 'Ivan Lam', 
@@ -32,10 +33,10 @@ list_names = {
 
 
 def main():
-    rand_period = randrange(2) + 1
-    print( list_names['pd' + str(rand_period)][
-        randrange( len(list_names['pd' + str(rand_period)]) )
+    rand_period = randrange(2) + 1 # Get a random period (either 1 or 2)
+    print( list_names['pd' + str(rand_period)][ # Get the list of names corresponding to the correct period
+        randrange( len(list_names['pd' + str(rand_period)]) ) # Get a random index within the list of names and print that name
     ])
 
-if __name__ == '__main__':
+if __name__ == '__main__': # If this script is run and not imported, call the main() function
     main()
