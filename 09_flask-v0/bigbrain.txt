@@ -1,0 +1,37 @@
+[team name] - Daniel Sooknanan, Roshani Shrestha, Sussy (ducky) and Pete (ducky)
+SoftDev
+K09: Simple Path to Greatness - Details the answers to questions on app.py 
+2021-10-04
+
+Q0: 
+We’ve seen similar syntax in Java where you would set a 
+variable to an instance of an object. Also, just in general 
+it’s similar to setting variables equal to function return values. 
+
+Q1:
+The meaning of '/' might have to do with directories and paths 
+to directories, especially since the format of the path to a 
+directory consists of slashes. Furthermore, `@app.route()` 
+indicates a path to a location because of the word “route.” 
+This could specify the path of the page in relation to the site 
+(so like pages.html/)
+
+Q2:
+This will print to the command prompt / terminal that’s used 
+to run the app. 
+
+Q3:
+It’ll print “__main__” if the app.py is specifically being 
+run or “app” if it’s run via “flask run” command.
+
+Q3: 
+This’ll appear on the page that comes up when you run the flask 
+file and open the 127.0.0.1 local page. This’ll be run when 
+127.0.0.1 is opened, as that directs the traffic to “/” which 
+in turn calls the hello_world function, which’ll return 
+“No hablo queso” on the site.
+
+Q5:
+It kind of reminds me of methods in Java, in which certain
+ methods appear in this format. For example, a simple one 
+ is `list.size()`.
