@@ -1,37 +1,59 @@
-[team name] - Daniel Sooknanan, Roshani Shrestha, Sussy (ducky) and Pete (ducky)
+print(team.name())  - Daniel Sooknanan, Roshani Shrestha, Sussy (ducky) and Pete (ducky)
 SoftDev
 K09: Simple Path to Greatness - Details the answers to questions on app.py 
 2021-10-04
 
 Q0: 
-We’ve seen similar syntax in Java where you would set a 
-variable to an instance of an object. Also, just in general 
-it’s similar to setting variables equal to function return values. 
+Before & After:
+We’ve seen similar syntax in Java where you would set 
+a variable to an instance of an object. Also, just in 
+general it’s similar to setting variables equal to 
+function return values. 
 
 Q1:
-The meaning of '/' might have to do with directories and paths 
-to directories, especially since the format of the path to a 
-directory consists of slashes. Furthermore, `@app.route()` 
-indicates a path to a location because of the word “route.” 
-This could specify the path of the page in relation to the site 
-(so like pages.html/)
+Before & After:
+The meaning of '/' might have to do with directories 
+and paths to directories, especially since the format 
+of the path to a directory consists of slashes. 
+Furthermore, `@app.route()` indicates a path to a 
+location because of the word “route.” This could 
+specify the path of the page in relation to the site 
+(so like pages.html/).
 
 Q2:
-This will print to the command prompt / terminal that’s used 
-to run the app. 
+Before:
+It won’t print out anywhere. 
+After:
+This will print to the command prompt / terminal that’s 
+used to run the app when the page is accessed.
 
 Q3:
-It’ll print “__main__” if the app.py is specifically being 
-run or “app” if it’s run via “flask run” command.
+Before: 
+It will print the name of the function surrounded 
+by two underscores on each side.It will print "__hello_world__".
+
+After: 
+It’ll print “__main__” if the app.py is specifically 
+being run or “app” if it’s run via “flask run” command. 
+This only prints in the terminal after opening the link 
+“http://127.0.0.1:5000/”. 
 
 Q3: 
-This’ll appear on the page that comes up when you run the flask 
-file and open the 127.0.0.1 local page. This’ll be run when 
-127.0.0.1 is opened, as that directs the traffic to “/” which 
-in turn calls the hello_world function, which’ll return 
-“No hablo queso” on the site.
+Before:
+This will not appear anywhere because it just returns, 
+not prints, "No hablo queso!".
+
+After:
+This’ll appear on the page that comes up when you run 
+the flask file and open the 127.0.0.1 local page by 
+opening the link “http://127.0.0.1:5000/”. This’ll be 
+run when 127.0.0.1 is opened, as that directs the traffic 
+to “/” which in turn calls the hello_world function, 
+which’ll return “No hablo queso!” as text on the site.
 
 Q5:
-It kind of reminds me of methods in Java, in which certain
- methods appear in this format. For example, a simple one 
- is `list.size()`.
+Before & After:
+It kind of reminds us of methods in Java, in which 
+certain methods appear in this format. For example, 
+a simple one is `list.size()`.
+
