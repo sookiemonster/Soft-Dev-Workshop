@@ -9,9 +9,7 @@ from random import choices
 app = Flask(__name__)
 
 def makeDict(filename):
-
     dict = {}
-
     try:
         with open(filename) as csvfile:
             reader = DictReader(csvfile)
@@ -22,29 +20,18 @@ def makeDict(filename):
             dict.pop('Total')
 
     except FileNotFoundError: 
-        pass
-
+        print("File %s does not exist" % (filename))
+    
     return dict
+
 
 def getRandomKey(dictionary):
 
-    occ_dict = {} # Create a dictionary to be filled in
-    filename = 'occupations.csv'
-
-    try:
-        with open(filename) as csvfile:
-            reader = DictReader(csvfile)
-            for row in reader: 
-                occ_dict[row['Job Class']] = float(row['Percentage']) 
-
-        if 'Total' in occ_dict.keys(): 
-            occ_dict.pop('Total')
-
-        result = choices(list(occ_dict.keys()), weights=occ_dict.values(), k=1)[0]
+    if (len(dictionary) > 0):
+        result = choices(list(dictionary.keys()), weights=dictionary.values(), k=1)[0]
         return "<h3>Selected: %s</h3>" % result
-
-    except FileNotFoundError: 
-        return 'File "%s" does not exist' % (filename)
+    else: 
+        return "<h3>Selected: None (no occupations to select from)</h3>"
 
 def listKeys(dictionary):
     key_list = "<div>Occupations: "
