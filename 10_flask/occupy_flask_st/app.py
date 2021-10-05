@@ -41,7 +41,7 @@ def getRandomKey(dictionary):
             occ_dict.pop('Total')
 
         result = choices(list(occ_dict.keys()), weights=occ_dict.values(), k=1)[0]
-        return "<span style='display: block; margin-bottom: 10px; font-weight: bold'>Selected: %s</span>" % result
+        return "<h3>Selected: %s</h3>" % result
 
     except FileNotFoundError: 
         return 'File "%s" does not exist' % (filename)
@@ -49,7 +49,7 @@ def getRandomKey(dictionary):
 def listKeys(dictionary):
     key_list = "<div>Occupations: "
     for key in dictionary.keys():
-        key_list += "<p style='margin: 7px 20px'>%s</p>" % (key)
+        key_list += "<div>%s</div>" % (key)
     return key_list + "</div>"
 
 @app.route("/") 
