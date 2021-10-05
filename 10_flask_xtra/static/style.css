@@ -1,0 +1,60 @@
+:root {
+    --dark-gray: #272727;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--dark-gray);
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 60px;
+}
+
+h1 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.select-container {
+    font-style: italic;
+    font-weight: 700;
+}
+
+#selected {
+    font-weight: 400;
+}
+
+.list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.occupation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 20px;
+    border: 1px solid var(--dark-gray);
+    border-radius: 5px;
+}
