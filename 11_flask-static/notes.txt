@@ -1,0 +1,4 @@
+Accessing files via localhost:5000/ doesn't work unless flask is being run / a server is being hosted
+
+1. Accessing foo (plaintext file) via the localhost link, downloads the file
+2. Accessing foo.html (a webpage) via the localhost link, renders the webpage instead
