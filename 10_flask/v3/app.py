@@ -1,4 +1,4 @@
-# Clyde 'Thluffy' Sinclair
+# The Red Imposter | Daniel Sooknanan, Roshani Shrestha, Shadman Rakib
 # SoftDev
 # Oct 2021
 
