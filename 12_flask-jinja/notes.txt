@@ -1,0 +1,14 @@
+# The Red Imposter | Daniel Sooknanan (Sussy), Roshani Shrestha (Pete), Shadmin Rakib (Ducky)
+# SoftDev
+# 2021-10-07
+# Baby's First Flask Template
+
+#Q0: What happens if you remove render_template from this line?
+There'll be an error, as render_template won't be imported and thus will not be defined
+
+#Q1: Can all of your teammates confidently predict the URL to use to load this page?
+Yes 
+
+#Q2: What is the significance of each argument?
+Defines variables that jinja can use to insert text into the template. This can be 
+any type of variable (ex: strings, ints, lists, dictionaries...)
