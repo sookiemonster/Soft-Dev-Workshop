@@ -35,8 +35,7 @@ def getRandomKey(dictionary):
     else:
         return "None (no occupations to select from)"
 
-# @app.route("/occupyflaskst") 
-@app.route("/") 
+@app.route("/occupyflaskst") 
 def main():
     occ_dict = makeDict('occupations.csv')
     return render_template('occupations.html', selected = getRandomKey(occ_dict), occupations = occ_dict)
