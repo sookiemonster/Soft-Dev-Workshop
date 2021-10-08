@@ -1,4 +1,4 @@
-# The Red Imposter | Daniel Sooknanan, Roshani Shrestha, Shadman Rakib
+# Blue Imposter | Daniel Sooknanan (Sussy), Yoonah Chang (Yelena), Annabel Zhang (Mang)
 # SoftDev
 # Oct 2021
 
@@ -39,7 +39,6 @@ def getRandomKey(dictionary):
 @app.route("/") 
 def main():
     occ_dict = makeDict('occupations.csv')
-
     return render_template('occupations.html', selected = getRandomKey(occ_dict), occupations = occ_dict)
 
 if __name__ == "__main__":
