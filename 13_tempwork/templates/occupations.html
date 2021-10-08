@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Occupations Picker</title>
+        <link rel="stylesheet" href="../static/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="layout-container">
+            <div class="header">
+                <h1>The Red Imposter</h1>
+                <span>Daniel Sooknanan, Roshani Shrestha, Shadman Rakib</span>
+            </div>
+            <div class="select-container">
+                Selected: <span id="selected">{{ selected }}</span>
+            </div>
+            <div class="occupations-container">
+                <h2>Occupations: </h2>
+                <div class="list-container">
+                {% for key, freq in occupations.items() %}
+                    <div>{{ key }}</div>
+                    <div>{{ freq }}</div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
