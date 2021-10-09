@@ -16,7 +16,7 @@ def makeDict(filename):
             reader = DictReader(csvfile)
             for row in reader: 
                 # Fill in the dictionary with Job Classes as keys & Percentages as values
-                dict[row['Job Class']] = float(row['Percentage']) 
+                dict[row['Job Class']] = [float(row['Percentage']), row['Link']]
 
         if 'Total' in dict.keys(): 
             dict.pop('Total') # Remove the Total at the end of the .csv file if it exists
@@ -30,7 +30,11 @@ def makeDict(filename):
 def getRandomKey(dictionary):
     if (len(dictionary) > 0): 
         # Get the first element of a list length 1 (or k) that selects random keys based on the weights specified by the keys respective values
-        result = choices(list(dictionary.keys()), weights=dictionary.values(), k=1)[0]
+        freq_list = list(dictionary.values())
+        for i in range(len(freq_list)):
+            freq_list[i] = freq_list[i][0]
+        
+        result = choices(list(dictionary.keys()), weights=freq_list, k=1)[0]
         return result
     else:
         return "None (no occupations to select from)"
@@ -38,7 +42,8 @@ def getRandomKey(dictionary):
 @app.route("/occupyflaskst") 
 def main():
     occ_dict = makeDict('occupations.csv')
-    return render_template('occupations.html', selected = getRandomKey(occ_dict), occupations = occ_dict)
+    selected = getRandomKey(occ_dict)
+    return render_template('occupations.html', selected = selected, selected_link = occ_dict[selected][1], occupations = occ_dict)
 
 if __name__ == "__main__":
     app.debug = True
