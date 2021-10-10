@@ -41,9 +41,9 @@ def getRandomKey(dictionary):
 
 @app.route("/occupyflaskst") 
 def main():
-    occ_dict = makeDict('occupations.csv')
+    occ_dict = makeDict('data/occupations.csv')
     selected = getRandomKey(occ_dict)
-    return render_template('occupations.html', selected = selected, selected_link = occ_dict[selected][1], occupations = occ_dict)
+    return render_template('tablified.html', selected = selected, selected_link = occ_dict[selected][1], occupations = occ_dict)
 
 if __name__ == "__main__":
     app.debug = True
