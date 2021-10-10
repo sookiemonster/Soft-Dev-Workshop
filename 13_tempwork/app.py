@@ -1,6 +1,6 @@
 # Blue Imposter | Daniel Sooknanan (Sussy), Yoonah Chang (Yelena), Annabel Zhang (Mang)
 # SoftDev
-# Oct 2021
+# 2021-10-10
 
 from flask import Flask, render_template
 from csv import DictReader
