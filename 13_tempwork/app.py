@@ -10,6 +10,7 @@ app = Flask(__name__)
 
 # Create a dictionary given the filename
 def makeDict(filename):
+    """Returns a dictionary given a .csv file structured, KEY : [Column_2, Column_3]"""
     dict = {}
     try:
         with open(filename) as csvfile:
@@ -28,6 +29,7 @@ def makeDict(filename):
 
 # Return a random key given the frequency at which it should appear (second column of csv)
 def getRandomKey(dictionary):
+    """Returns a random key based on a specified frequency, given a dictionary structured KEY : [FREQUENCY, Value_2]"""
     if (len(dictionary) > 0): 
         # Get the first element of a list length 1 (or k) that selects random keys based on the weights specified by the keys respective values
         freq_list = list(dictionary.values())
