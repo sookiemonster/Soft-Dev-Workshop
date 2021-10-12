@@ -16,7 +16,7 @@ def makeDict(filename):
         with open(filename) as csvfile:
             reader = DictReader(csvfile)
             for row in reader: 
-                # Fill in the dictionary with Job Classes as keys & Percentages as values
+                # Fill in the dictionary with Job Classes as keys & a list of Percentages & Links as values
                 dict[row['Job Class']] = [float(row['Percentage']), row['Link']]
 
         if 'Total' in dict.keys(): 
