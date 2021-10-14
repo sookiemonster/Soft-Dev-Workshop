@@ -4,18 +4,26 @@ SoftDev
 Oct 2021  -->
 <html>
   <head>
-    <title> LOGIN PAGE </title>
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    
   </head>
   <body>
-    <h1>
-      Welcome, Travelers of the Intertoobz!
-    </h1>
-    <h3>
-      Enter your username below to proceed.
-    </h3>
-    <form action="/auth" method="POST">
-      <input type="text" name="username">
-      <input type="submit" name="sub1">
-    </form>
+    <div class="layout-container">
+      <h1>
+        Welcome, Travelers of the Intertoobz!
+      </h1>
+      <h3>
+        Enter your username below to proceed.
+      </h3>
+      <form action="/auth" method="POST">
+        <input type="text" name="username">
+        <input id="submit" type="submit" name="sub1" value="Submit">
+      </form>
+    </div>
+    <div class="footer">
+      <span class="team">Red Wings</span>
+      <span>Daniel Sooknanan, Cameron Nelson, Sophie Liu</span>
+    </div>
   </body>
 </html>
