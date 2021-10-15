@@ -1,6 +1,7 @@
 # Red Wings | Daniel Sooknanan, Cameron Nelson, Sophie Liu
 # SoftDev
-# Oct 2021 
+# Flask Form Shenanigans
+# 2021-10-15
 
 from flask import Flask, render_template, request, redirect
 
