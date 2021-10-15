@@ -8,13 +8,13 @@ app = Flask(__name__)    #create Flask object
 
 @app.route("/", methods=['GET'])
 def login():
-    return render_template('login.html')
+    return render_template('login.html', req_method = request.method)
 
 @app.route("/auth", methods=['GET', 'POST'])
 def welcome():
     if (request.method == 'POST'):
         username = request.form.get('username')
-        return render_template( 'response.html', username = username)
+        return render_template( 'response.html', username = username, req_method = request.method)
     else:
         return redirect("/")
 
