@@ -16,7 +16,7 @@ def welcome():
         username = request.form.get('username')
         return render_template( 'response.html', username = username, req_method = request.method)
     else:
-        return redirect("/")
+        return redirect("/") # Redirect users to login if there's no post request to get info from
 
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
