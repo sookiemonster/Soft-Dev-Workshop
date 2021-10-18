@@ -1,0 +1,54 @@
+:root {
+    --primary: #303030;
+    --secondary: #bbbbbb;
+    font-size: 14px;
+}
+
+body {
+    color: var(--primary);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 30vh 0 0 0;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 30px;
+    background-color: var(--secondary);
+}
+
+.footer > span {
+    display: block;
+    font-size: 1rem;
+}
+
+.team {
+    font-weight: 700;
+}
+
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
