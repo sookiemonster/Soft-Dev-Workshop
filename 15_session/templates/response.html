@@ -12,10 +12,11 @@ K15 Flask Session Shenaniganza
   </head>
   <body>
     <div class="layout-container">
-      <h1>
-        Welcome {{ username }}!
-      </h1>
+        {% if session['username'] %}
+          <h1>Welcome {{ session['username'] }}!</h1>
+        {% endif %}
       <h2>What's the dog doing?</h2>
+      <a href="logout">Logout</a>
     </div>
 
     <div class="footer">
