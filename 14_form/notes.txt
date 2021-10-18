@@ -1,0 +1,10 @@
+Red Wings | Daniel Sooknanan, Cameron Nelson, Sophie Liu
+SoftDev
+Flask Form Shenanigans
+2021-10-15
+
+An error appears when the /auth is accessed without submitting a "POST" request.
+Also, you can check the type of request method by seeing if it's equal to 'POST' or 'GET.' 
+
+Using HTML forms also doesn't transmit information through the url, which makes it 
+a more favorable option for verification than HTML queries.
