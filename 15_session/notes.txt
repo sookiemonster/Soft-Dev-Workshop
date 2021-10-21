@@ -1,0 +1,4 @@
+Variables in Jinja do not display if the variable is empty. 
+CSS can be used to manipulate buttons. 
+If the user closes the window without logging out and without ending the flask session, the welcome page should appear for that username. 
+The session does not work without the secret key, even if it isn't used anywhere else. 
