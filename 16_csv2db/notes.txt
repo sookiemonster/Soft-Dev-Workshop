@@ -1,0 +1,10 @@
+FIELD = "Column" data
+RECORD = "Row" data
+
+* Block lettering not required, but is generally standard
+
+Creating Tables 
+CREATE TABLE <table name> (<column name> <data type> ...)
+
+Inserting Values
+INSERT INTO <table name> VALUES (<field 1>, <field 2>)
