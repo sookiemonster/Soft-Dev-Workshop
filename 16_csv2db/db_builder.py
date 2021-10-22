@@ -47,7 +47,7 @@ create_courses = """CREATE TABLE COURSES (
 c.execute(create_courses)    # run SQL statement
 
 c.executemany("""INSERT INTO COURSES (NAME,MARK,ID)
-# VALUES (?,?,?); """, course_list);
+VALUES (?,?,?); """, course_list);
 
 db.commit() #save changes
 
