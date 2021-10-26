@@ -18,6 +18,7 @@ db = sqlite3.connect(DB_FILE) #open if file exists, otherwise create
 c = db.cursor()               #facilitate db ops -- you will use cursor to trigger db events
 
 def tableExists(table_name):
+    """Returns a boolean representative of whether a table exists on """
     # Select all tables with table_name within the database file
     c.execute(''' SELECT count(name) FROM sqlite_master WHERE type='table' AND name='%s' ''' % (table_name))
     return (c.fetchone()[0]==1)
