@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Daniel Sooknanan (Sussy), Alif Abdullah (The Eagle in the Sand)
+       SoftDev pd2
+       K18 -- CSS basics
+       2021-11-22 -->
+
+  <head>
+    <meta charset="utf-8"/>
+    <title>foo title</title>
+    <style>
+      
+      :root {
+        --white: #FFFFFF;
+        --light-gray: #b3b3b3;
+        --med-gray: #777777;
+        --dark-gray: #525252;
+        --bg-gray: #616161;
+        --nav-width: 130px;
+        --content-begin: 70px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        margin: 0;
+        padding: 8px;
+        background-color: var(--bg-gray);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .content-container {
+        background-color: var(--med-gray);
+        height: calc(100vh - 16px)
+      }
+
+      h1 {
+        padding: 5px;
+        margin: 0;
+        text-align: center;
+        
+        color: var(--white);
+        background-color: var(--light-gray);
+      }
+
+      a {
+        display: block;
+        text-decoration: none;
+        color: var(--white);
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: var(--med-gray);
+      }
+
+      .nav {
+        margin-left: 10px;
+      }
+
+      .content-row {
+        position: absolute;
+        top: var(--content-begin);
+      }
+
+      .nav-content {
+        position: absolute;
+        top: calc(var(--content-begin) + 30px);
+      }
+
+      h2, p {
+        left: var(--nav-width);
+      }
+
+      p {
+        top: calc(var(--content-begin) + 40px) !important;
+        padding: 0 30px 0 0;
+      }
+      
+      .footer {
+        position: absolute;
+        padding: 20px 25px;
+        bottom: 8px;
+        box-sizing: border-box;
+        width: calc(100% - 16px);
+        color: var(--med-gray);
+        text-align: end;
+        background-color: var(--dark-gray);
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="content-container">
+      <h1>h1 foo</h1>
+      <h3 class="nav content-row">nav foo</h3>
+      <ul class="nav nav-content">
+        <li><a href="">dis</a></li>
+        <li><a href="">dat</a></li>
+        <li><a href="">de udda ting</a></li>
+      </ul>
+      <h2 class="content-row">main foo heading</h2>
+      <p class="content-row">Seasonal ristretto a doppio est steamed seasonal java mazagran cappuccino mazagran, coffee, cup, crema 
+        robust shop ristretto, sweet medium saucer barista crema. Black chicory redeye filter single shot, 
+        macchiato, café au lait barista, cortado so americano cinnamon sweet saucer. Percolator, aroma, 
+        ut grinder barista, java macchiato skinny kopi-luwak skinny, steamed, cultivar a robusta cinnamon, 
+        dripper sit roast doppio variety spoon iced. Single origin id cinnamon a iced coffee, saucer, plunger pot froth, 
+        java latte chicory steamed cortado.
+        <br>
+        <br>
+        Ristretto aged lungo, that mazagran, seasonal americano, cappuccino coffee doppio irish body, cup blue 
+        mountain id, sweet that, percolator trifecta doppio wings cream. Saucer aged, cappuccino at doppio, 
+        sugar, dark caramelization, barista saucer redeye in, sit blue mountain black rich single origin milk 
+        white doppio lungo white aroma. Cinnamon viennese a mug, single origin carajillo, breve kopi-luwak 
+        viennese, brewed, breve black variety, id, redeye, java, cup, and strong single origin pumpkin spice
+        extraction. French press foam americano, crema single shot, et, shop milk half and half body blue 
+        mountain, coffee in half and half con panna extra  pumpkin spice flavour. 
+      </p>
+
+        <br>
+        <br>
+
+      <div class="footer">
+        Copyright &copy; 2021 Clyde "Thluffy" Sinclair
+      </div>
+    </div>
+  </body>
+
+</html>
