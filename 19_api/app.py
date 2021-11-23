@@ -19,8 +19,10 @@ with open(KEY_FILE, "r") as file:
 @app.route("/") 
 def main():
     request_json = urllib.request.urlopen("https://api.nasa.gov/planetary/apod?api_key=%s" % API_KEY).read()
-    img_src = loads(request_json)['url']
-    return render_template("main.html", pic = img_src)
+    request_dict = loads(request_json)
+    img_desc = request_dict['explanation']
+    img_src = request_dict['url']
+    return render_template("main.html", pic = img_src, desc = img_desc)
 
 if __name__ == "__main__":
     app.run()
