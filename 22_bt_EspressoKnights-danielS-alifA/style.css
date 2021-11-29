@@ -1,0 +1,26 @@
+:root {
+    --blue: #d6eafd;
+    --dark-blue: #7eb2e6;
+    --purple: #f1d5fc;
+    --dark-purple: #cfa5f7;
+}
+
+body {
+}
+
+.layout-container {
+    padding: 40px calc(10px + 5vw);
+}
+
+.ex-container {
+    padding: 20px;
+    background-color: var(--blue);
+    border: 0.5px solid var(--dark-blue);
+    margin: 10px;
+}
+
+.row div {
+    padding: 10px;
+    background-color: var(--purple);
+    border: 0.5px solid var(--dark-purple);
+}
