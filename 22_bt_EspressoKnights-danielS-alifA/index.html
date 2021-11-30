@@ -87,6 +87,69 @@
             <p>
                 Best part is, this is all done with just classes and HTML. No fiddling with CSS stylings needed!
             </p>
+            <h5> Tables </h5> <small>(You can't eat off them, sadly...)</small>
+            <table class="table table-success">
+                <thead>
+                    <tr>
+                        <th> Name </th>
+                        <th> Age </th>
+                        <th> Planet of Origin </th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td> John Johnson </td>
+                      <td> 42 </td>
+                      <td> Earth (maybe?)  </td>
+                  </tr>
+                  <tr>
+                      <td> Kirby </td>
+                      <td> Infinite </td>
+                      <td> Popstar </td>
+                  </tr>
+                </tbody>
+            </table>
+            <p>
+                Bootstrap requires you to create your own tables in html, but
+                setting the <code>class</code> of the  table tag to table (<code>class="table"</code>)
+                will render a beautifully styled table for you. You can also add additional words
+                to the class attribute value for further styling effect. To make the table above, this is what
+                my class attribute looked like: <code>class="table table-success"</code>.
+            </p>
+        <h5> Button Up </h5>
+          <a class="btn btn-outline-warning buton" href="https://www.youtube.com/watch?v=iik25wqIuFo" role="button"> Bad Button </a>
+          <input class="btn btn-warning buton" type="submit" value="Dead Button">
+            <p>
+                Adding <code>btn</code> to the <code>class</code> of an anchor tag
+                (<code>class="btn"</code>) turns a link into a fancy-shmancy button!
+                Of course, we'd see button usage more prevalently with submit buttons for forms.
+                Well, adding btn to the class attributes of such input tags turns them into fancy buttons as well!
+            </p>
+        <h5> Nav(bar)igating the Seas </h5>
+        <a class="link-info" href="https://getbootstrap.com/docs/5.1/components/navbar/#nav"> Source Code For Nav Bar Listed Below </a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link disabled">Disabled</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <p>
+          Navbars may seem hefty in Bootstrap at first, but the code required to construct them
+          offer proper styling in several scenarios, including resizing the page. Adding <code> navbar </code>
+          and <code>navbar-expand</code> to the topmost nav tag will signal the nested code as navbar code and have
+          it stretch across the page.  Adding <code> navbar-brand </code> to anchor tag classes will style that element as
+          a company logo or name, while <code> nav-link </code> will style the link as member of a row of links on a navbar.
+          </p>
         </div>
     </body>
 </html>

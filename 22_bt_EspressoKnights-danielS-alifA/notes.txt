@@ -1,0 +1,9 @@
+Espresso Knights - Daniel Sooknanan (Sussy), Alif Abdullah (The Eagle in the Sand)
+SoftDev
+K22 Bootstrap Bonanza
+2021-11-29
+time spent: 1.2 hours
+
+Bootstrap versions of website elements like the navbar seem rather intense at first glance.
+It may do some good to have a running QAF thread dedicated to breaking down, line-by-line,
+the navbar in its entirety, and seeing how each class used contributes to the final product.
