@@ -16,13 +16,18 @@
     </head>
     <body>
         <div class="layout-container container-fluid">
-            <h1>Layout & Text</h1>
+            <h1 class="display-2">Bootstrap Bonanza</h1>
+            <h4>Espresso Knights <span class="text-muted">| Daniel Sooknanan & Alif Abdullah</span></h4>
+
+            <hr>
+            
+            <h2>Layout & Text</h2>
             <small>
                 Notice how the default font is changed! It's not Times New (Old IMO) Roman anymore.
             </small>
             <br><br>
             <h5>Containers, containers, containers.</h5>
-            <small>Bootstrap containers have specified breakpoints at which they become the full width. Resize the window to see the change.</small>
+            <p>Bootstrap containers have specified breakpoints at which they become the full width. Resize the window to see the change.</p>
             <div class="container-sm ex-container">
                 Small Container
             </div>
@@ -33,7 +38,9 @@
                 Large Container
             </div>
             <br>
-            <h5>Grids!</h5><small>(But not CSS Grid...)</small>
+            <h5>Grids!  
+                <small class="text-muted">(But not CSS Grid...)</small>
+            </h5>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-8">I</div>
@@ -52,12 +59,33 @@
             <p>
                 In bootstrap, there are premade classes for rows and columns to allow
                 easy and flexible grid-making. More specifically, <code>.row</code> is used to make rows
-                in which divs with classes <code>.col-md-n</code> (n is any integer between 1-12). Why in between 1-12?
+                in which divs with classes <code>.col-md-n</code> where n is any integer between 1-12. Why in between 1-12?
                 Well, the basic grids in Bootstrap are divided into 12 equal columns, so 
                 column containers can span those preset columns.
             </p>
             <p>
-                Also, try resizing! Column elements automatically collapse into one column they can't fit.
+                Also, try resizing! Column elements automatically collapse into one column after a certain width threshold.
+            </p>
+
+            <h2>Form (like Voltron)</h2>
+            <p>
+                Bootstrap also makes styling forms a whole lot easier, I mean take a look at this basic login page.
+            </p>
+            <div class="mb-3">
+                <label for="email-input" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email-input" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="eg. JohnDoe123">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <input class="btn btn-outline-primary" type="submit" value="Submit"><br>
+            <p>
+                Best part is, this is all done with just classes and HTML. No fiddling with CSS stylings needed!
             </p>
         </div>
     </body>
