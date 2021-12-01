@@ -3,6 +3,7 @@
     --dark-blue: #7eb2e6;
     --purple: #f1d5fc;
     --dark-purple: #cfa5f7;
+    --light-gray: #f0f0f0;
 }
 
 body {
@@ -23,4 +24,10 @@ body {
     padding: 10px;
     background-color: var(--purple);
     border: 0.5px solid var(--dark-purple);
+}
+
+pre {
+    padding: 7px;
+    border-radius: 5px;
+    background-color: var(--light-gray);
 }
