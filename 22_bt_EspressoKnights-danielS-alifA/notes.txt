@@ -7,3 +7,5 @@ time spent: 1.2 hours
 Bootstrap versions of website elements like the navbar seem rather intense at first glance.
 It may do some good to have a running QAF thread dedicated to breaking down, line-by-line,
 the navbar in its entirety, and seeing how each class used contributes to the final product.
+
+HTML TO ENTITY CONVERTER USED FOR PRE TAG CONTENTS: https://www.online-toolz.com/tools/text-html-entities-convertor.php
