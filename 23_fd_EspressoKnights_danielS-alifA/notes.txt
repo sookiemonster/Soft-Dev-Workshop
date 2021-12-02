@@ -1,0 +1,29 @@
+Espresso Knights - Daniel Sooknanan (Sussy), Alif Abdullah (The Eagle in the Sand)
+K23 - Building a Foundation
+21-01-12
+Time Elapsed: 1 hour
+
+DISCO: One big discovery was the fact that Foundation and Bootstrap both utilize a class-based approach
+towards styling html elements. An earlier discovery with Bootstrap was the fact that one could give an
+HTML element multiple classes by putting spaces between class names in the value for the class attribute.
+
+QCC:
+Foundation appears to be lighter than Bootstrap to load, but with lesser features. I will say that the
+documentation for Bootstrap is more appealing and easier to read than with Foundation.
+
+I do not like the video based approach foundation tries to put onto readers of its website. I prefer snappier,
+concise explanations of code, like Bootstrap's documentation has.
+
+Q0: I had to use the foundation documentation extensively. The on-ramp page
+of my neighboring duo, though pleasant to look at, did not include the code they
+used to construct the features they had on their page.
+Bootstrap Documentation: https://getbootstrap.com/docs/5.1/getting-started/introduction/
+
+As for verbal consultations, we had our neighboring duo talk in-brief about the usage
+ of cards in their site, but that was all.
+
+Q1: Personally, I prefer Bootstrap. The class names are easier to understand, and there doesn't 
+seem to be as many custom attributes (if any at all). I also found Foundation to be relatively
+convoluted to understand; the grid system didn't make as much sense as Bootstrap's. Furthermore, 
+the Bootstrap aesthetic is, in my opinion, better than that of Foundation. The typography is overall
+more clean (eg. font family is nicer, more variation with header types like "display").
