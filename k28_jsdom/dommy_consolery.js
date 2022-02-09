@@ -1,25 +1,5 @@
-/*
-   your PPTASK:
-   
-   Test drive each bit of code in this file,
-    and insert comments galore, indicating anything
-     you discover,
-    	have questions about,
-    		or otherwise deem notable.
-    		
-    		Write with your future self or teammates in mind.
-    		
-    		If you find yourself falling out of flow mode, consult 
-    		other teams
-    		MDN
-
-   A few comments have been pre-filled for you...
-   
-   (delete this block comment once you are done)
-*/
-
-// Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon 
-// SoftDev pd0
+// Cappuccino :: Daniel Sooknanan, Tami Takada
+// SoftDev pd1
 // K28 -- Getting more comfortable with the dev console and the DOM
 // 2022-02-08t
 // --------------------------------------------------
