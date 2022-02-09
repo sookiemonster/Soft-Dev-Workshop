@@ -17,6 +17,9 @@
       .red   {color : #ff0000;}
       .green {color : #00ff00;}
       .blue  {color : #0000ff;}
+      input[type="number"] {
+        width: 12ch;
+      }
     </style>
   </head>
 
@@ -36,6 +39,17 @@
       <li class="green blue">item 5</li>
       <li class="green blue">item 6</li>
       <li class="">item 7</li>
+      <li>
+        Factorial of: <input id="fact-num" type="number" value="0" placeholder="Number..."> = <span id="fact-result">...</span>
+      </li>
+      <li>
+        <input id="fib-num" type="number" value="0" placeholder="Number..."> of the Fibonnaci Sequence = <span id="fib-result">...</span>
+      </li>
+      <li>
+        GCD of:
+        <input type="number" class="gcd-num" value="0" placeholder="Number..."> and
+        <input type="number" class="gcd-num" value="0" placeholder="Number..."> = <span id="gcd-result"></span>
+      </li>
     </ol>
 
     <script src="dommy_consolery.js"></script>

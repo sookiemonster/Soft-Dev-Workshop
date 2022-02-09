@@ -28,7 +28,7 @@ var o = { 'name' : 'Thluffy',
           func : function(x) {
             return x+30;
           }
-        };
+        }
 
 
 var addItem = function(text) {
@@ -81,7 +81,7 @@ var fib = function(n) {
   return fib_list[n];
 }
 
-function gcd(a, b) {
+var gcd = function(a, b) {
   // Euclidean Method for getting GCD
   let gcd_helper = function(low, high) {
     if (high % low != 0) {
@@ -101,6 +101,28 @@ function gcd(a, b) {
   }
 }
 
-addItem("Factorial of 4: " + fact(4));
-addItem("7th Fibonnaci Number (starting at the 0th number): " + fib(7));
-addItem("GCD of 64 and 48: " + gcd(64, 48));
+// addItem("Factorial of 4: " + fact(4));
+// addItem("7th Fibonnaci Number (starting at the 0th number): " + fib(7));
+// addItem("GCD of 64 and 48: " + gcd(64, 48));
+
+// Add Factorial Event Listener
+let fact_num = document.getElementById('fact-num');
+let fact_result = document.getElementById('fact-result');
+fact_num.addEventListener('change', function() {
+  fact_result.innerHTML = fact(fact_num.value)
+});
+
+// Add Fibonacci Event Listener
+let fib_num = document.getElementById('fib-num');
+let fib_result = document.getElementById('fib-result');
+fib_num.addEventListener('change', function() {
+  fib_result.innerHTML = fib(fib_num.value)
+});
+
+let gcd_nums = document.getElementsByClassName('gcd-num');
+let gcd_result = document.getElementById('gcd-result');
+for (let i = 0; i < gcd_nums.length; i++) {
+  gcd_nums[i].addEventListener('change', function() {
+    gcd_result.innerHTML = gcd(gcd_nums[0].value, gcd_nums[1].value)
+  })
+}
