@@ -130,3 +130,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Web Hosting
+*.wsgi
+
+# API Keys
+*.key
