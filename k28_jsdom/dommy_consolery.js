@@ -106,25 +106,28 @@ var fib = function(n) {
 }
 
 function gcd(a, b) {
+  // Euclidean Method for getting GCD
+  let gcd_helper = function(low, high) {
+    if (high % low != 0) {
+      return gcd_helper(high % low, low)
+    }
+    return low;
+  }
+
   if (a == 0 || b == 0) {
-      return 0;
+    return 0;
   }
   else if (a == b) {
-      return a;
+    return a;
   }
   else if (a < b) {
-      return gcd_helper(a, b);
+    return gcd_helper(a, b);
   }
   else {
-      return gcd_helper(b, a);
+    return gcd_helper(b, a);
   }
 }
 
-function gcd_helper(low, high) {
-  for (let i = low; i >= 0 ; i--) {
-      if (low % i == 0 && high % i == 0) {
-          return i;
-      }
-  }
-  return 1;
-}
+addItem("Factorial of 4: " + fact(4));
+addItem("7th Fibonnaci Number (starting at the 0th number): " + fib(7));
+addItem("GCD of 64 and 48: " + gcd(64, 48));
