@@ -84,7 +84,47 @@ var stripe = function() {
   }
 };
 
-//insert your implementations here for...
-// FIB
-// FAC
-// GCD
+var fact = function(n) {
+  if (n == 1) {
+    return 1;
+  }
+  return n * fact(n - 1);
+}
+
+var fib = function(n) {
+  if (n <= 1) {
+    return n;
+  }
+
+  let fib_list = [0, 1];
+  for (let i = 2; i <= n; i++) {
+    fib_list.push(
+      fib_list[i-1] + fib_list[i-2]
+    )
+  }
+  return fib_list[n];
+}
+
+function gcd(a, b) {
+  if (a == 0 || b == 0) {
+      return 0;
+  }
+  else if (a == b) {
+      return a;
+  }
+  else if (a < b) {
+      return gcd_helper(a, b);
+  }
+  else {
+      return gcd_helper(b, a);
+  }
+}
+
+function gcd_helper(low, high) {
+  for (let i = low; i >= 0 ; i--) {
+      if (low % i == 0 && high % i == 0) {
+          return i;
+      }
+  }
+  return 1;
+}
