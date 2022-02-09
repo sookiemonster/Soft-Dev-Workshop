@@ -72,10 +72,6 @@ var fact = function(n) {
 }
 
 var fib = function(n) {
-  if (n <= 1) {
-    return n;
-  }
-
   let fib_list = [0, 1];
   for (let i = 2; i <= n; i++) {
     fib_list.push(
@@ -96,9 +92,6 @@ function gcd(a, b) {
 
   if (a == 0 || b == 0) {
     return 0;
-  }
-  else if (a == b) {
-    return a;
   }
   else if (a < b) {
     return gcd_helper(a, b);
