@@ -65,7 +65,7 @@ var stripe = function() {
 };
 
 var fact = function(n) {
-  if (n == 1) {
+  if (n <= 1) {
     return 1;
   }
   return n * fact(n - 1);
@@ -105,19 +105,23 @@ var gcd = function(a, b) {
 let fact_btn = document.getElementById('fact-btn');
 let fact_result = document.getElementById('fact-result');
 fact_btn.addEventListener('click', function() {
-  fact_result.innerHTML = "2! = " + fact(2)
+  let randInt = Math.floor(Math.random() * 20);
+  fact_result.innerHTML = `${randInt}! = ${fact(randInt)}`;
 });
 
 // Fibonacci Button
 let fib_btn = document.getElementById('fib-btn');
 let fib_result = document.getElementById('fib-result');
 fib_btn.addEventListener('click', function() {
-  fib_result.innerHTML = "5th Num of Fibonnaci (Starting at 0) = " + fib(5)
+  let randInt = Math.floor(Math.random() * 20);
+  fib_result.innerHTML = `(n = ${randInt}) of Fibonnaci = ${fib(randInt)}`;
 });
 
 // GCD Button
 let gcd_btn = document.getElementById('gcd-btn');
 let gcd_result = document.getElementById('gcd-result');
 gcd_btn.addEventListener('click', function() {
-  gcd_result.innerHTML = "GCD of 72 & 96 = " + gcd(72, 96)
+  let randInt1 = Math.floor(Math.random() * 100);
+  let randInt2 = Math.floor(Math.random() * 100);
+  gcd_result.innerHTML = `GCD of ${randInt1} & ${randInt2} = ${gcd(randInt1, randInt2)}`;
 });
