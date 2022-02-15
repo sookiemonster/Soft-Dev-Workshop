@@ -56,7 +56,7 @@ var drawCircle = (e) => {
 var clearButton = document.getElementById("buttonClear")
 
 var wipeCanvas = function() {
-    ctx.clearRect(0, 0, c.clientWidth, c.height)
+    ctx.clearRect(0, 0, c.clientWidth, c.clientHeight)
 }
 
 clearButton.addEventListener("click", wipeCanvas);
