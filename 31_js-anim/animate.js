@@ -51,17 +51,18 @@ var drawDot = (e) => {
   ctx.fill();
   ctx.stroke(); 
 
+  // console.log(e)
   if (e && requestID != null) {
     window.cancelAnimationFrame(requestID)
   }
   requestID = window.requestAnimationFrame(drawDot);
-  console.log(requestID)
+  // console.log(requestID)
 };
 
 
 var stopIt = () => {
   console.log("stopIt invoked...")
-  console.log( requestID );
+  // console.log( requestID );
   window.cancelAnimationFrame(requestID)
 };
 
