@@ -14,7 +14,7 @@ var stopButton = document.getElementById("buttonStop");
 var ctx = c.getContext("2d");
 
 //set fill color to team color
-ctx.fillStyle = "#42bdff"
+ctx.fillStyle = "#ff335c"
 
 var requestID;  //init global var for use with animation frames
 
@@ -24,7 +24,7 @@ var clear = (e) => {
 };
 
 
-var radius = 40;
+var radius = 0;
 var growing = true;
 
 
