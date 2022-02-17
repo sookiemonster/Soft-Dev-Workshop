@@ -28,7 +28,7 @@ var radius = 0;
 var growing = true;
 
 
-var drawDot = (e) => {
+var drawDot = () => {
   let max_radius = c.clientWidth / 2
   let min_radius = 0
 
@@ -51,10 +51,8 @@ var drawDot = (e) => {
   ctx.fill();
   ctx.stroke(); 
 
-  // console.log(e)
-  if (e && requestID != null) {
-    window.cancelAnimationFrame(requestID)
-  }
+  window.cancelAnimationFrame(requestID)
+  console.log(requestID)
   requestID = window.requestAnimationFrame(drawDot);
   // console.log(requestID)
 };
