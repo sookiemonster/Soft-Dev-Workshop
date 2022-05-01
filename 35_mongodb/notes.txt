@@ -1,0 +1,5 @@
+Fields are within documents that are within collections.
+
+Replica Set - machines that store the same data; used for keeping data intact
+
+Cluster - group of servers that store your data
