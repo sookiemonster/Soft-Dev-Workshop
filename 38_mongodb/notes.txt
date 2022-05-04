@@ -1,0 +1,13 @@
+Ch. 4
+
+Comparison Operators
+{ "<field> : { "<comparison_operator>" : <value>  }}
+
+$eq = Equal to 
+$ne = Not Equal To 
+
+$gt = Greater Than
+$lt = Less Than
+
+$gte = Greater Than / Equal To
+$lte = Less Than / Equal To

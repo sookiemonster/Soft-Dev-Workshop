@@ -1,0 +1,26 @@
+Ch.3
+
+Documents in collections MUST each have a unique _id value. Documents with identical contents but different _id values are permitted.
+Ordered inserts stop after an error is thrown. Unordered inserts continue & insert documents with unique _id values.
+
+UpdateOne / UpdateMany
+db.<collection>.updateOne({ "<field1>" : <value>, ... }, <update_operator>)
+
+## Update operators
+
+Increment Values
+{"$inc" : {"<field1>" : <increment_value>,  "<field2>" : <increment_value>,} }
+
+Set Values (implicitly creates field-value pairs if not there)
+{"$set" : {"<field1>" : <new_value>, "<field2>" : <new_value>} }
+
+Add Element to Array Field
+{ $push : { <field1> : <value>, ... }}
+
+## Deleting
+
+Delete a given collection
+db.<collection>.drop()
+
+Delete a specified document(s)
+deleteOne(), deleteMany()
