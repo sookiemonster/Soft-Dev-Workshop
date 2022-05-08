@@ -11,3 +11,36 @@ $lt = Less Than
 
 $gte = Greater Than / Equal To
 $lte = Less Than / Equal To
+
+Aggregation Syntax
+{ <operator>: [ <field>, <value> ] }
+
+Query Operators
+{"<query_operator>" : [{ "<field>" : <value>, ... }] }
+
+Expressive Query Operator
+{ $expr: { <expression> } }
+$"<field_name>" = <field_value>
+
+Size - Returns a cursor with all documents where the 
+array field is exactly the specified length
+{ <array_field> : { "$size" : <number> }}
+
+All - Returns a cursor with all documents in which the 
+array has all the given elements (regardless of their order)
+{ <array_field> : { "$all" : [ "<value>", ...  ] } }
+
+Projection
+0 - Exclude field (Shows everything excluded fields)
+1 - Include field (Shows only included fields)
+* Cannot mix 0s & 1s (unless excluding the _id value)
+db.<collection>.find( { "<field1>" : "<value>" }, { "<field1>" : 0, ... })
+
+Element Match - Matches documents that contain an array
+field with at least one element that matches the specified
+query criteria
+{ "<field>" : { "$elemMatch" : { "<field>" : "<value>" } } }
+
+Dot Notation
+db.<collection>.find( { "<field1>.<subfield1>" : "<subfield1_value>" } )
+db.<collection>.find( { "<field1>.<index>.<subfield>" : "<subfield_value of first object in array>" } )
